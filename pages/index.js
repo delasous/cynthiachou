@@ -3,63 +3,30 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Cynthia's Portfolio</title>
+        <link rel="icon" href="/rubycon.jpg" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <main>
+        <div className='h-screen grid xsm:grid-cols-1 xsm:grid-rows-1 md:grid-cols-2'>
+          <div className='pl-5 grid xsm:grid-cols-2 auto-rows-xsm xsm:z-10 xsm:h-screen md:max-w-3/4 md:col-start-1 md:col-span-1 md:self-center md:justify-self-center'>
+            <h1 className='mb-5 col-start-1 text-4xl tracking-widest leading-loose xsm:text-white'>Hi, I'm Cynthia.</h1>
+            <h1 className='col-start-1 text-4xl tracking-widest leading-loose xsm:text-white'>I write for bots, software, and magazines.</h1>
+            <div className='mt-16 pr-5 grid grid-rows-4 auto-cols-max xsm:col-end-3 row-start-4 justify-self-end xsm:text-white'>
+              <h2 className='row-start-1 col-end-4'>LinkedIn</h2>
+              <h2 className='row-start-2 col-end-3'>Medium</h2>
+              <h2 className='row-start-3 col-end-2'>Email</h2>
+              <h2 className='row-start-4 col-end-1'>Instagram</h2>
+            </div>
+          </div>
+          <div className='h-screen w-100 xsm:col-start-1 md:col-start-2 md:col-span-1'>
+            <img className='h-full w-full object-cover' src='/profile.svg'></img>
+          </div>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
+    
   )
 }
