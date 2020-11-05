@@ -1,15 +1,27 @@
+import Link from 'next/link'
+
+import Layout from './Layout';
+import Nav from './Nav';
+
+//solving this layout with grid-areas?
 const PageLayout = ({ children }) => {
-    return(
-      <main>
-        <div className='h-screen grid auto-cols auto-rows'>
-          <div>
-              <h1 className='text-4xl tracking-widest leading-loose'>CYNTHIA CHOU</h1>
+    return (
+     <Layout>
+        <div className='flex flex-row'>
+          <div className='relative grid auto-cols-2 grid-rows-2'>
+            <div className='min-w-64'>
+                <h1 className='p-5 text-2xl tracking-widest leading-loose'>
+                  <Link href='/'>CYNTHIA CHOU</Link>
+                </h1>
+            </div>
+            <div className='pt-8 col-start-2'>
+              <Nav />
+            </div>
           </div>
           {children}
         </div>
-      </main>
-    )
+      </Layout>
+    );
   };
   
-  export default PageLayout;
-  
+export default PageLayout;
