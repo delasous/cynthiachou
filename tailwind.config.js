@@ -7,14 +7,8 @@ module.exports = {
         },
         colors: {
           primary: '#f7f7f7',
-          secondary: '#2a2a2a',
+          secondary: '#ff1313',
           blue: '#3332cc',
-        },
-        gridTemplateColumns: {
-          'subgrid': 'subgrid'
-        },
-        gridTemplateRows: {
-          'subgrid': 'subgrid'
         },
         gridAutoRows: {
           'xsm': 'max-content max-content 1fr max-content'
@@ -22,11 +16,23 @@ module.exports = {
         flex: {
           '2': '2 1 auto',
         },
+        width: {
+          '72': '20rem'
+        },
         maxWidth: {
           '1/2': '50%',
           '3/4': '75%',
+          '56': '14rem',
+          '64': '16rem',
+          '72': '20rem',
+          '104': '26rem',
+          '112': '28rem',
         },
         minWidth: {
+         '16': '4rem',
+         '32': '8rem',
+         '40': '10rem',
+         '48': '12rem',
          '64': '16rem'
         },
         screens: {
