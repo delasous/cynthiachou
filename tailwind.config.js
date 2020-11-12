@@ -21,6 +21,7 @@ module.exports = {
         },
         maxWidth: {
           '1/2': '50%',
+          '2/3': '60%',
           '3/4': '75%',
           '56': '14rem',
           '64': '16rem',
@@ -40,7 +41,10 @@ module.exports = {
         },
       },
     },
-    variants: {},
+    variants: {
+      textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+      textDecoration: ['responsive', 'hover', 'focus', 'group-hover'],
+    },
     plugins: [],
   }
   
