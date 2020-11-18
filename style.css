@@ -20,6 +20,10 @@ p {
   @apply text-sm;
 }
 
+li {
+  @apply text-sm;
+}
+
 a:hover {
   @apply text-secondary underline cursor-pointer;
 }

@@ -17,6 +17,12 @@ const Magazine = () => {
                 </a>
                 <h3 className='mt-8'>Bunch AI</h3>
             </div>
+            <div className='min-w-40 max-w-56 h-auto row-start-3 col-start-5 flex flex-col items-center'>
+                <Link href='everyplate'>
+                    <img className='h-auto w-full object-cover cursor-pointer' src='/EveryPlateLogo.svg'></img>
+                </Link>
+                <h3 className='mt-8'>EveryPlate</h3>
+            </div>
         </div>
     );
 };

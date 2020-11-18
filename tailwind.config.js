@@ -23,6 +23,7 @@ module.exports = {
           '1/2': '50%',
           '2/3': '60%',
           '3/4': '75%',
+          '48': '12rem',
           '56': '14rem',
           '64': '16rem',
           '72': '20rem',
@@ -34,16 +35,24 @@ module.exports = {
          '32': '8rem',
          '40': '10rem',
          '48': '12rem',
-         '64': '16rem'
+         '64': '16rem',
+         '72': '20rem',
+         '104': '26rem',
+         '112': '28rem',
         },
         screens: {
           'xsm': {'min': '240px', 'max': '768px'},
         },
+        scale: {
+          '175': '1.75',
+          '200':'2'
+        }
       },
     },
     variants: {
       textColor: ['responsive', 'hover', 'focus', 'group-hover'],
       textDecoration: ['responsive', 'hover', 'focus', 'group-hover'],
+      zIndex: ['responsive', 'hover', 'focus'],
     },
     plugins: [],
   }
